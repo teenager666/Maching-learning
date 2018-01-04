@@ -1,0 +1,33 @@
+# index operation of arg operation
+
+        import numpy as np
+        x = np.random.normal(1000000)
+        
+        
+        np.min(x)   //min value 
+        np.argmin(x)   //min value index
+        
+        np.max(x) //max value
+        np.argmax(x)   //max value index
+        
+# sort and use index
+
+        x = np.arange( 16 )
+        np.random.shuffle(x)    // get a random x 
+        
+        np.sort(x)   //return a sorted x but x is not sorted
+        
+        x.sort()   // get a sorted x
+        
+        np.sort( x , axis = 1 )   axis = 0 // 默认值
+        
+        np.argsort(x)   // return sorted index of x 
+        
+        
+        
+        np.partition(x , 3)    
+        np.argpartition(x ,3) 
+        
+        
+
+
