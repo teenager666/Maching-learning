@@ -1,4 +1,4 @@
-# numpy.array 基础
+# basic of numpy.array
 
     import numpy
     numpy.__version__   #View version number
@@ -6,7 +6,8 @@
     import numpy as np
     np.__version__      #View version number
 
-# Python List的特点
+
+# Features of Python List
 
     L = [ i for i in range(10) ]
 OUT: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -14,8 +15,14 @@ OUT: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     L[5] = "Machine Learning"
 OUT: [0, 1, 2, 3, 4, 'Maching learning', 6, 7, 8, 9]
 
-    #Python List 是一种非常灵活并且对类型不做要求的list但是效率较低
-    #在做矩阵运算就有可能出错 
+    #Python List is a very smart and non-restrictive type of list
+    #But inefficiency
+    
+# Features of Python array
+    import array 
+    l = array.array( 'i' , [ i for i in range(10) ] )
     
-    
+    l[5] = "maching learning" #wrong statement
+    #Although python array provides array of limited array
+    #But Python array doesn't think of these array as vectors
     
