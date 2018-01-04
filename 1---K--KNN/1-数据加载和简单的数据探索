@@ -1,0 +1,19 @@
+# 数据加载和简单的数据探索
+        import numpy as np
+        import matplotlib as mpl
+        import matplotlib.pyplot as plt
+        from sklearn import datasets
+        
+        iris = datasets.load_iris  // 获取数据集 , 字典
+        iris.keys()  //具体包含的数据
+        
+        x_matrix = iris.data[:,:2]
+        y_vector = iris.target
+        
+        plt.scatter(x[y==0,0] , x[y==0,1] , color = 'red' , marker = 'o')
+        plt.scatter(x[y==1,0] , x[y==1,1] , color = 'blue')
+        plt.scatter(x[y==2,0] , x[y==2,1] , color = 'gren')
+        
+        plt.show()
+        
+        
