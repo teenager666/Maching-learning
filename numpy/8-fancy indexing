@@ -25,3 +25,14 @@
         x < 3  // get a bool array by every elements of 　
         
 
+        np.count_nonzero( x <= 3 )  //nonzero 
+        
+        np.sum( x <= 3 )
+        
+        np.any( x <= 3 )  //是否存在True
+        np.all( x <= 3 )   //是否都为True
+        
+        np.sum( (x>3) & (x<10) )
+        //get a bool array
+        
+        
