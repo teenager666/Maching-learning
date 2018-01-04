@@ -1,0 +1,27 @@
+# Fancy indexing 
+
+
+        import numpy as np
+
+        x = no.arange(16)
+
+
+        indexes = [a1....an]
+        x[indexes]
+        x[indexes] = x[a1]...x[an]
+
+        x = np.random.random(16).reshape(4,4)
+        
+        row = np.array([0 , 1 , 2])
+        col = np.array([1 , 2 , 3])
+        
+        x[row,col]
+        
+        col = [True , False , True , True]
+        
+        x[:,col]      //You can pass index into it also pass bool array into it 
+        
+        
+        x < 3  // get a bool array by every elements of 　
+        
+
