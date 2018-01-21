@@ -1,0 +1,23 @@
+        import numpy as np
+        import matplotlib.pyplot as plt
+        from sklearn import datasets
+        from collections import Counter
+        from math import *
+
+        iris = datasets.load_iris()
+        x_train = iris.data
+        y_vector = iris.target
+
+        x = x_train[1,:]
+
+        distances = [sqrt(np.sum(row-x)**2) for row in x_train] #计算所有的欧拉距离
+        nearest = np.argsort(distances) #排序距离后的下表列表
+
+        k = 6 # k 值设置为6
+
+        topK_y = [y_vector[i] for i in nearest] 
+        votes = Counter(topK_y)
+
+        who = votes.most_common(1)[0][0] #返回一个元素为元组的列表 元组含有两个元素 分别是 是谁 和 它的个数
+
+        print(who)
